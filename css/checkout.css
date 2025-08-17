@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-btn {
+    max-width: 600px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid orange;
+}
+
+.checkout-btn h2 {
+    color: #2d3436;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.checkout-btn p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.checkout-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.checkout-btn a:hover {
+    background-color: #2d3436;
+}

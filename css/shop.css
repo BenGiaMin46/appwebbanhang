@@ -1,0 +1,30 @@
+#shop-page {
+    margin-top: 80%;
+}
+
+.product{
+    margin-top: 30px;
+}
+
+/* Tuỳ chỉnh kích cỡ hình */
+.product img{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit:cover ;
+}
+hr {
+    margin: 0;
+    width: 100%;
+}
+
+/* thiết kế phần trang */
+.pagination a {
+    color: orange;
+    font-size: 1.2 rem;
+}
+
+.pagination li a:hover {
+    color:white;
+    background-color: orange;
+}

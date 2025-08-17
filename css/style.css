@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+  padding: 1.5rem 3rem;
+  font-size: 16px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.img-logo {
+  width: 60px;
+  height: 50px; /* Gộp và ưu tiên giá trị height mới */
+  object-fit: contain;
+}
+
+.navbar-nav {
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-collapse .navbar-nav .nav-link {
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.navbar-collapse .navbar-nav .nav-link:hover,
+.navbar-collapse .navbar-nav .nav-link:active,
+.navbar-nav i:hover {
+  color: #ffa500;
+}
+
+.navbar-nav i {
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Tăng gap để tách các biểu tượng xa hơn */
+}
+
+/* Fix lỗi */
+@media only screen and (max-width: 990px) {
+  .navbar-buttons {
+      margin-left: 5px;
+  }
+
+  .navbar-buttons ul {
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+  }
+
+  .navbar-buttons ul.fa-solid {
+      margin: 20px 5px 10px 20px; /* top right bottom left */
+  }
+}
+
+/* Thiết kế home section */
+#home {
+  background-image: url('../img/main/main6.webp');
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom:30px;
+}
+#home span {
+  color: #3300ff;
+}
+
+button{
+font-size: 0.9rem; 
+font-weight: 900;
+outline: none;
+border: none;
+color: #f9f9f9;
+background-color: #000;
+padding: 15px 30px;
+cursor: pointer;
+text-transform: uppercase;
+transition: 0.4 ease ;
+}
+button:hover{
+  background-color: #ffa500;
+}
+
+/* Thiết kế brand section */
+#brand{
+  margin-top: 30px ;
+  margin-bottom: 30px;
+}
+/* Design new section */
+#new img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover ;
+}
+#new .one{
+  position: relative;
+}
+#new .one .detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height:100%;
+  background-color: #000;
+  opacity: 0.6;
+  transition: background-color 0.4s ease, opacity 0.4s ease, transform 0.4s ease; /* Add transition for multiple properties */
+}
+
+#new .one .detail:hover {
+  background-color: darkseagreen;
+  opacity: 0.8; /* Slightly increase opacity for a more vibrant hover effect */
+  transform: scale(1.02); /* Subtle scale effect to make the hover feel dynamic */
+}
+/* css for Hr tag */
+hr{
+  width: 15%;
+  height: 3px !important;
+  background-color: #eaff00;
+  margin: 0 auto;
+  border: 1px solid #ffa500;
+  margin-bottom: 5px;
+}
+/* CSS for star */
+.star i {
+  color: #eaff00;
+  font-size: 0.9rem;
+  padding: 0 3 px;
+}
+
+/* Sale banner */
+#banner {
+  background-image: url('../img/salebanner/banner1.jpg');
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom:30px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#banner h2{
+  color: #ffa500;
+}
+
+/* Footer design */
+footer {
+  background-color: #000;
+}
+
+footer h4 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer h6 {
+  color: #ffa500;
+}
+
+footer li {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 3px;
+}
+
+footer li a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+footer li a:hover{
+  color: #ffa500;
+}
+.footer-2 img {
+  width: 50%;
+}
+.footer-2 i{
+  color: #f9f9f9;
+  font-size: 2rem;
+  padding: 0 5px;
+}
+.footer-2 .social {
+  text-align: right;
+}
+.footer-2 i:hover {
+  color:#ffa500
+}
+
+/* Product design */
+.product {
+  cursor: pointer;
+}
+
+.product :hover img{
+  opacity: 0.7;
+  transition: 0.5 all;
+}
+
+.product :hover button{
+  background-color: #ffa500;
+  color: #f9f9f9;
+  transition: 0.5 all;
+}
+
+/* Login design */
+#login-form{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#login-form input{
+  width: 75%;
+  margin: 0 auto;
+}
+
+#login-form label{
+  font-weight: bold;
+  font-size: 1.1 rem;
+  text-align: left;
+  margin-left: 0px;
+  padding: 5px 0;
+}
+
+#login-form #login-btn{
+  margin: 10px auto;
+  color: #f9f9f9;
+  background-color: #ffa500;
+}
+
+#login-form #login-btn:hover{
+  background-color: #000;
+}
+
+#login-form #register-url{
+  color: #ffa500;
+}
+
+/* register form design */
+#register-form{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#register-form input{
+  width: 75%;
+  margin: 0 auto;
+}
+
+#register-form label{
+  font-weight: bold;
+  font-size: 1.1 rem;
+  text-align: left;
+  margin-left: 0px;
+  padding: 5px 0;
+}
+
+#register-form #register-btn{
+  margin: 10px auto;
+  color: #f9f9f9;
+  background-color: #ffa500;
+}
+
+#register-form #register-btn:hover{
+  background-color: #000;
+}
+
+#registern-form #login-url{
+  color: #ffa500;
+}
+
+/* Account design */
+#change-password-form{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  /* padding: 20px; */
+}
+
+#change-password-form input{
+  width: 75%;
+  margin: 0 auto;
+}
+
+#change-password-form label{
+  font-weight: bold;
+  font-size: 1.1 rem;
+  text-align: left;
+  margin-left: 0px;
+  padding: 5px 0;
+}
+
+#change-password-form #change-password-btn{
+  margin: 10px auto;
+  color: #f9f9f9;
+  background-color: #ffa500;
+}
+
+#change-password-form #change-password-btn:hover{
+  background-color: #000;
+}
+
+#account #your-order-url,#logout-url{
+  color: #ffa500;
+}

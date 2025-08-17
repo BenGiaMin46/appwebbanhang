@@ -1,0 +1,116 @@
+hr{
+    margin: 0;
+    width: 8%;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse:collapse ;
+}
+
+#cart th{
+    background-color:orange;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+#cart td img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+#cart td{
+    padding: 10px 20px;
+}
+
+.product-info{
+    display:flex ;
+    flex-wrap:wrap ;
+}
+
+#cart td a{
+    text-decoration: none;
+
+}
+
+#cart td input{
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+}
+
+#cart.product-info p {
+    margin: 3px;
+}
+
+
+#cart .btn-delete{
+    width: 100%;
+    text-align: left;
+    color: orange;
+    background-color: aliceblue;
+    border: none;
+}
+#cart .btn-delete:hover{
+    color: red;
+}
+
+#cart .btn-update{
+    width: 100%;
+    text-align: left;
+    color: orange;
+    background-color: aliceblue;
+    border: none;
+}
+#cart .btn-update:hover{
+    color: red;
+}
+
+
+/* Totall design */
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid orange;
+    text-align: right;
+}
+
+.cart-total table{
+    font-weight:bold ;
+}
+
+.checkout {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout-btn {
+    display: flex;
+    justify-content: flex-end;
+    background-color: orange;
+}
+
+.checkout-btn:hover{
+    background-color: black;
+}
+
+
+#cart .btn-delete{
+    width: 100%;
+    text-align: left;
+    color: orange;
+    background-color: aliceblue;
+    border: none;
+}
+#cart .btn-delete:hover{
+    color: red;
+}
+
